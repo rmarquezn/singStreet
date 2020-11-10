@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+#navbar{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navB:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+#title{
+    background-image: url(Imagenes/caminando.jpg);
+    background-size: cover;
+    height: 720px;
+}
+
+#title h1{
+    text-align: center;
+    padding-top: 5em;
+    font-size: 6em;
+}
