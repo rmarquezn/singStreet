@@ -21,9 +21,16 @@ nav a:hover{
 }
 
 #title{
-    background-image: url(Imagenes/caminando.jpg);
+    background-image: linear-gradient(white,black), url(Imagenes/caminando.jpg);
     background-size: cover;
     height: 720px;
+    filter: grayscale();
+    background-blend-mode: darken;
+}
+
+#title:hover{
+    filter: contrast(1.5) saturate(1.5);
+    cursor: default;
 }
 
 #title h1{
@@ -38,6 +45,15 @@ h2{
 iframe{
     display: block;
     margin: 0 auto;
+    padding: 1em;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 4em;
+}
+
+#videos iframe{
+    padding: 1em;
+    margin-bottom: 1em;
 }
 
 .desc{
@@ -48,8 +64,32 @@ iframe{
 #about{
     padding-left: 8em;
     padding-right: 8em;
+    text-align: justify;
 }
+
 #boutUs{
     display: grid;
     grid-template-columns: 50% 50%;
+    column-gap: 2em;
+}
+
+#album{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+}
+
+#about img{
+    filter: grayscale();
+}
+#about img:hover{
+    filter: none;
+}
+#albumCover{
+    max-width: 20em;
+}
+
+#bandPic{
+    max-width: 100%;
 }
