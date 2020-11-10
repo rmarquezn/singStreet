@@ -3,18 +3,20 @@ body{
     color: white;
 }
 
-#navbar{
-    display: grid;
-    grid-template-columns: 70% 30%;
-}
-
 nav{
     display: flex;
     justify-content: space-around;
 }
-
-.navB:hover{
+nav a{
     color: grey;
+    text-decoration: none;
+}
+nav a#this{
+    color: white !important;
+}
+
+nav a:hover{
+    color: lightgrey;
     cursor: pointer;
 }
 
@@ -26,6 +28,28 @@ nav{
 
 #title h1{
     text-align: center;
-    padding-top: 5em;
+    padding-top: 6em;
     font-size: 6em;
+    margin-top: 10px;
+}
+h2{
+    text-align: center;
+}
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+.desc{
+    text-align: center;
+    color: grey;
+}
+
+#about{
+    padding-left: 8em;
+    padding-right: 8em;
+}
+#boutUs{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
