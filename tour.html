@@ -1,42 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
-        <a href="index.html">HOME</a>
-        <a href="tour.html" id="this">TOUR</a>
-        <a href="media.html">MEDIA</a>
-        <a href="about.html">ABOUT</a>
-        <a href="epk.html">EPK</a>
-        <a href="contact.html">CONTACT</a>
+      <a href="index.html">HOME</a>
+      <a href="tour.html" id="this">TOUR</a>
+      <a href="media.html">MEDIA</a>
+      <a href="about.html">ABOUT</a>
+      <a href="epk.html">EPK</a>
+      <a href="contact.html">CONTACT</a>
     </nav>
     <!-- navbar end -->
 
-    <h2>TOUR DATES</h2>
+    <div id="tour">
+      <h2>TOUR DATES</h2>
+      <p class="desc">
+        See where we've played and get notified for our future shows!
+      </p>
+      <div>
+        <div style="display: inline-flex">
+          <p
+            id="upcoming"
+            style="cursor: pointer; color: white"
+            onclick="change(this)"
+          >
+            Upcoming Shows
+          </p>
+          <p style="cursor: default">&nbsp;&nbsp;/&nbsp;&nbsp;</p>
+          <p
+            id="past"
+            style="cursor: pointer; color: grey"
+            onclick="change(this)"
+          >
+            Past Shows
+          </p>
+        </div>
+      </div>
+      <!-- tourNav end -->
+      <div id="upShows" style="display: block">
+        <div class="show" style="text-align: center">
+          <p>DATE</p>
+          <p>VENUE</p>
+          <p>CITY</p>
+          <p>GET NOTIFIED</p>
+          <br />
+        </div>
+        <hr />
+        <div class="show">
+          <p>20/01/2021</p>
+          <p>The 100 Club</p>
+          <p>London, England</p>
+          <button id="notify" onclick="notify()">Notify Me</button>
+        </div>
+        <hr />
+        <div class="show">
+          <p>01/02/2021</p>
+          <p>Autódromo Hermanos Rodríguez</p>
+          <p>CDMX, Mexico</p>
+          <button id="notify" onclick="notify()">Notify Me</button>
+        </div>
+        <hr />
+        <div class="show">
+          <p>19/03/2021</p>
+          <p>El Plaza Condesa</p>
+          <p>CDMX, Mexico</p>
+          <button id="notify" onclick="notify()">Notify Me</button>
+        </div>
+        <hr />
+        <div class="show">
+          <p>04/20/2021</p>
+          <p>Sugar Factory</p>
+          <p>Amsterdam, Netherlands</p>
+          <button id="notify" onclick="notify()">Notify Me</button>
+        </div>
+        <hr />
+        <div class="show">
+          <p>30/05/2021</p>
+          <p>Sidecar</p>
+          <p>Barcelona, Spain</p>
+          <button id="notify" onclick="notify()">Notify Me</button>
+        </div>
+        <hr />
+        <div class="show">
+          <p>12/06/2021</p>
+          <p>Prinzenbar</p>
+          <p>Hamburg, Germany</p>
+          <button id="notify" onclick="notify()">Notify Me</button>
+        </div>
+        <hr />
+      </div>
+      <div id="paShows" style="display: none">
+        <div class="show" style="text-align: center">
+          <p>DATE</p>
+          <p>VENUE</p>
+          <p>CITY</p>
+          <br />
+        </div>
+        <hr />
+        <div class="show">
+          <p>28/07/2020</p>
+          <p>Whelan's</p>
+          <p>Dublin, Ireland</p>
+        </div>
+        <hr />
+        <div class="show">
+          <p>03/08/2020</p>
+          <p>Cyprus Avenue</p>
+          <p>Cork, Ireland</p>
+        </div>
+        <hr />
+        <div class="show">
+          <p>15/09/2020</p>
+          <p>Dolan's</p>
+          <p>Limerick, Ireland</p>
+        </div>
+        <hr />
+        <div class="show">
+          <p>22/10/2020</p>
+          <p>The Cobblestone</p>
+          <p>Dublin, Ireland</p>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <!-- tour end -->
+
+    <!-- footer start -->
     <footer>
-        <div id="icons">
-            <a href="https://www.facebook.com/singstreetmovie" target="_blank">
-            <img src="/Iconos/facebook.png" alt="facebook">
+      <div id="icons">
+        <a href="https://www.facebook.com/singstreetmovie" target="_blank">
+          <img src="/Iconos/facebook.png" alt="facebook" />
         </a>
         <a href="https://twitter.com/SingStreetMovie" target="_blank">
-            <img src="/Iconos/twitter.png" alt="twitter">
+          <img src="/Iconos/twitter.png" alt="twitter" />
         </a>
         <a href="https://www.instagram.com/singstreetmovie/" target="_blank">
-        <img src="/Iconos/instagram.png" alt="instagram">
+          <img src="/Iconos/instagram.png" alt="instagram" />
         </a>
         <a href="https://soundcloud.com/singstreet" target="_blank">
-            <img src="/Iconos/soundcloud.png" alt="soundcloud">
+          <img src="/Iconos/soundcloud.png" alt="soundcloud" />
         </a>
-        <a href="https://www.youtube.com/channel/UCV6Lzz5N0lMpthtPWL494oA" target="_blank">
-            <img src="/Iconos/youtube.png" alt="youtube">
+        <a
+          href="https://www.youtube.com/channel/UCV6Lzz5N0lMpthtPWL494oA"
+          target="_blank"
+        >
+          <img src="/Iconos/youtube.png" alt="youtube" />
         </a>
-        </div>
+      </div>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

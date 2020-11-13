@@ -1,156 +1,229 @@
-body{
-    background-color: black;
-    color: white;
+body {
+  background-color: black;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
 }
 
-nav{
-    display: flex;
-    justify-content: space-around;
+nav {
+  display: flex;
+  justify-content: space-around;
 }
-nav a{
-    color: grey;
-    text-decoration: none;
+nav a {
+  color: grey;
+  text-decoration: none;
 }
-nav a#this{
-    color: white !important;
-}
-
-nav a:hover{
-    color: lightgrey;
-    cursor: pointer;
+nav a#this {
+  color: white !important;
 }
 
-#title{
-    background-image: linear-gradient(white,black), url(Imagenes/caminando.jpg);
-    background-size: cover;
-    height: 720px;
-    filter: grayscale();
-    background-blend-mode: darken;
+nav a:hover {
+  color: lightgrey;
+  cursor: pointer;
 }
 
-#title:hover{
-    filter: saturate(1.5);
-    cursor: default;
+#title {
+  background-image: linear-gradient(white, black), url(Imagenes/caminando.jpg);
+  background-size: cover;
+  height: 720px;
+  filter: grayscale();
+  background-blend-mode: darken;
 }
 
-#title h1{
-    text-align: center;
-    padding-top: 6em;
-    font-size: 6em;
-    margin-top: 10px;
-}
-h2{
-    text-align: center;
-}
-iframe{
-    display: block;
-    margin: 0 auto;
-    padding: 1em;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-radius: 4em;
+#title:hover {
+  filter: saturate(1.5);
+  cursor: default;
 }
 
-#videos iframe{
-    padding: 1em;
-    margin-bottom: 1em;
+#title h1 {
+  text-align: center;
+  padding-top: 4em;
+  font-size: 8em;
+  margin-top: 10px;
+}
+h2 {
+  text-align: center;
+}
+iframe {
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 4em;
 }
 
-.desc{
-    text-align: center;
-    color: grey;
+#videos iframe {
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
-#about{
-    padding-left: 8em;
-    padding-right: 8em;
-    text-align: justify;
-}
-#aboutBand h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: left;
-    font-size: 6em;
-    margin-bottom: 0px;
-}
-#aboutBand p{
-    font-size: 1.5em;
+.desc {
+  text-align: center;
+  color: grey;
 }
 
-#aboutBand{
-    background-image: linear-gradient(grey,black), url(/Imagenes/sing-street-trama.jpg);
-    background-size: cover;
-    height: 692px;
-    filter: grayscale();
-    background-blend-mode: darken;
-    padding: 0px 2%;
-    border-radius: 2em;
+#about {
+  padding-left: 8em;
+  padding-right: 8em;
+  text-align: justify;
+}
+#aboutBand h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: left;
+  font-size: 6em;
+  margin-bottom: 0px;
+  cursor: default;
+}
+#aboutBand p {
+  font-size: 1.5em;
 }
 
-#boutUs{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 2em;
+#aboutBand {
+  background-image: linear-gradient(grey, black),
+    url(/Imagenes/sing-street-trama.jpg);
+  background-size: cover;
+  height: 692px;
+  filter: grayscale();
+  background-blend-mode: darken;
+  padding: 0px 2%;
+  border-radius: 2em;
 }
 
-#album{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: center;
-    align-items: center;
+#boutUs {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 2em;
 }
 
-#about img{
-    filter: grayscale();
-}
-#about img:hover{
-    filter: none;
-}
-#albumCover{
-    max-width: 20em;
+.us {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
 }
 
-#bandPic{
-    max-width: 100%;
+.us img {
+  width: 10em;
+  height: 15em;
+  padding: 1em;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 2em;
+  object-fit: cover;
 }
 
-#icons{
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
+#album {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
 }
 
-#icons img,#icons a{
-    max-width: 24px;
-    max-height: 24px;
+#about img {
+  filter: grayscale();
 }
-#icons img:hover{
-    filter: blur(1px);
+#about img:hover {
+  filter: none;
 }
-
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
+#albumCover {
+  max-width: 20em;
 }
 
-#contact{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    padding: 4em;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    border-radius: 4em;
-}
-input{
-    width: 40em;
+#bandPic {
+  max-width: 100%;
 }
 
-#message{
-    height: 10em;
+#icons {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
-#send{
-    cursor: pointer;
+
+#icons img,
+#icons a {
+  max-width: 24px;
+  max-height: 24px;
+}
+#icons img:hover {
+  filter: blur(1px);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+}
+
+#contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 4em;
+}
+input {
+  width: 40em;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+#message {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 6px;
+}
+#send {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4em;
+  width: 20em;
+  height: 2em;
+  transition-duration: 0.5s;
+}
+
+#send:hover {
+  background-color: white;
+  color: black;
+}
+
+#tour {
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+hr {
+  border-radius: 100%;
+}
+
+#upShows .show {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+#paShows .show {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+#notify {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2em;
+  transition-duration: 0.5s;
+}
+
+#notify:hover {
+  background-color: white;
+  color: black;
 }
