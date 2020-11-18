@@ -75,7 +75,7 @@ iframe {
   cursor: default;
 }
 #aboutBand p {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 #aboutBand {
@@ -119,6 +119,10 @@ iframe {
   align-items: center;
 }
 
+#album p {
+  font-size: 1.2em;
+}
+
 #about img {
   filter: grayscale();
 }
@@ -126,7 +130,8 @@ iframe {
   filter: none;
 }
 #albumCover {
-  max-width: 20em;
+  max-width: 18em;
+  border-radius: 1em;
 }
 
 #bandPic {
@@ -226,4 +231,8 @@ hr {
 #notify:hover {
   background-color: white;
   color: black;
+}
+
+#epk img {
+  max-width: 100%;
 }
